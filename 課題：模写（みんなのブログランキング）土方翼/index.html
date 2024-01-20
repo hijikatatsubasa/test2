@@ -25,7 +25,23 @@
               <li>よくある質問</li>
             </ul>
           </nav>
+          <button class="hamburger">
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+            <span class="hamburger_bar"></span>
+         </button>
       </header>
+      <div class="hamburgerModal activeOpen" id="modalWrap">
+        <ul id="hamburgerModalNav">
+          <li class="modalNav">ユーザー登録</li>
+          <li class="modalNav">ログイン<span class="pointer"><</span></li>
+          <li class="acordion">ログアウト</li>
+          <li class="modalNav">マイページ<span class="pointer"><</span></li>
+          <li class="acordion">サイト登録</li>
+          <li class="modalNav">よくある質問</li>
+        </ul>
+        <div id="close"><span>✖️</span>閉じる</div>
+       </div>
       <main id="main">
         <div id="separateOne">
           <article class="introduction">
@@ -215,53 +231,53 @@
           <div id="categoryRanking">
             <h2>カテゴリー別ランキング</h2>
             <div id="categoryLink">
-              <p>6ヶ月以内の初心者限定&nbsp;&nbsp;&nbsp;></p>
-              <p>1年以内の初心者限定&nbsp;&nbsp;&nbsp;></p>
-              <p>ドメイン戦闘力ランキング&nbsp;&nbsp;&nbsp;></p>
+              <p><span>6ヶ月以内の初心者限定</span><span>></span></p>
+              <p><span>1年以内の初心者限定</span><span>></span></p>
+              <p><span>ドメイン戦闘力ランキング</span><span>></span></p>
             </div>
             <div id="categories">
               <dl>
                 <div>
                 <dt>インターネット：</dt>
-                <div><dd>インターネット</dd><dd>Wi-Fi</dd><dd>ガジェット</dd><dd>ネット回線</dd><dd>レンタルサーバー</dd><dd>格安スマホ</dd></div>
+                <div class="categoriesDiv"><dd>インターネット</dd><dd>Wi-Fi</dd><dd>ガジェット</dd><dd>ネット回線</dd><dd>レンタルサーバー</dd><dd>格安スマホ</dd></div>
                 </div>
                 <div>
                 <dt>エンタメ:</dt>
-                <div><dd>エンタメ</dd><dd>ゲーム</dd><dd>動画</dd><dd>占い</dd></div>
+                <div class="categoriesDiv"><dd>エンタメ</dd><dd>ゲーム</dd><dd>動画</dd><dd>占い</dd></div>
                 </div>
                 <div>
                 <dt>お仕事：</dt>
-                <div><dd>お仕事</dd><dd>アルバイト</dd><dd>就職</dd><dd>転職</dd></div>
+                <div class="categoriesDiv"><dd>お仕事</dd><dd>アルバイト</dd><dd>就職</dd><dd>転職</dd></div>
                 </div>
                 <div>
                 <dt>ビジネス：</dt>
-                <div><dd>ビジネス</dd><dd>ブログ・アフィリエイト</dd><dd>副業</dd><dd>在宅ワーク</dd><dd>起業</dd></div>
+                <div class="categoriesDiv"><dd>ビジネス</dd><dd>ブログ・アフィリエイト</dd><dd>副業</dd><dd>在宅ワーク</dd><dd>起業</dd></div>
                 </div>
                 <div>
                 <dt>健康：</dt>
-                <div><dd>健康</dd><dd>健康食品</dd><dd>筋トレ</dd><dd>育毛</dd></div>
+                <div class="categoriesDiv"><dd>健康</dd><dd>健康食品</dd><dd>筋トレ</dd><dd>育毛</dd></div>
                 </div>
                 <div>
                 <dt>学び・資格：</dt>
-                <div><dd>学び・資格</dd><dd>プログラミング</dd><dd> 英語学習・英会話</dd><dd>資格取得</dd></div>
+                <div class="categoriesDiv"><dd>学び・資格</dd><dd>プログラミング</dd><dd> 英語学習・英会話</dd><dd>資格取得</dd></div>
                 </div>
                 <div>
                 <dt>恋愛・結婚：</dt>
-                <div><dd>恋愛・結婚</dd><dd>ブライダルフェア</dd><dd>マッチングアプリ</dd><dd>婚活</dd><dd>結婚相談所</dd></div>
+                <div class="categoriesDiv"><dd>恋愛・結婚</dd><dd>ブライダルフェア</dd><dd>マッチングアプリ</dd><dd>婚活</dd><dd>結婚相談所</dd></div>
                 </div>
                 <div>
                 <dt>暮らし：</dt>
-                <div><dd>暮らし</dd><dd>VOD</dd><dd>アウトドア</dd><dd>アクセサリー</dd><dd>インテリア</dd><dd>ウォーターサーバー</dd><dd>お祝い</dd><dd>グルメ</dd>
+                <div class="categoriesDiv"><dd>暮らし</dd><dd>VOD</dd><dd>アウトドア</dd><dd>アクセサリー</dd><dd>インテリア</dd><dd>ウォーターサーバー</dd><dd>お祝い</dd><dd>グルメ</dd>
                   <dd>スポーツ</dd><dd>その他</dd><dd>ファッション</dd><dd>ペット</dd><dd>子育て</dd><dd>宅配クリーニング</dd><dd>家事</dd><dd>引っ越し</dd>
                   <dd>旅行</dd><dd>書籍</dd><dd>花</dd><dd>買い取り</dd><dd>車・バイク</dd><dd>雑記</dd><dd>音楽</dd><dd>食材宅配</dd></div>
                 </div>
                 <div>
                 <dt>美容：</dt>
-                <div><dd>美容</dd><dd>エステ</dd><dd>スキンケア</dd><dd>ダイエット</dd><dd>化粧品</dd><dd>美顔器</dd><dd>脱毛</dd></div>
+                <div class="categoriesDiv"><dd>美容</dd><dd>エステ</dd><dd>スキンケア</dd><dd>ダイエット</dd><dd>化粧品</dd><dd>美顔器</dd><dd>脱毛</dd></div>
                 </div>
                 <div>
                 <dt>金融・投資：</dt>
-                <div><dd>金融・投資</dd><dd>FX</dd><dd>カードローン</dd><dd>クレジットカード</dd><dd>不動産</dd><dd>仮想通貨</dd><dd>保険</dd><dd>株</dd></div>
+                <div class="categoriesDiv"><dd>金融・投資</dd><dd>FX</dd><dd>カードローン</dd><dd>クレジットカード</dd><dd>不動産</dd><dd>仮想通貨</dd><dd>保険</dd><dd>株</dd></div>
                 </div>
               </dl>
             </div>

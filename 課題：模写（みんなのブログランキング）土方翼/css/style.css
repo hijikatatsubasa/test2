@@ -36,6 +36,68 @@ body {
     list-style: none;
     padding-left: 20px;
 }
+.hamburger {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    display: none;
+  }
+  
+  .hamburger_bar {
+    display: block;
+    width: 100%;
+    height: 2.5px;
+    position: absolute;
+    left: 0;
+    background: #000;
+  }
+  
+  .hamburger_bar:nth-child(1) {
+    top: 1px;
+  }
+  
+  .hamburger_bar:nth-child(2) {
+    top: 70%;
+    transform: translateY(-80%);
+  }
+  
+  .hamburger_bar:nth-child(3) {
+    top: 130%;
+    transform: translateY(-100%);
+  }
+  .hamburgerModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000;
+    color: white;
+  }
+  .hamburgerModal ul {
+    margin: 0 20px;
+  }
+  .hamburgerModal ul li {
+    list-style: none;
+    line-height: 60px;
+    border-bottom: 1px solid darkgray;
+  }
+  .hamburgerModal ul li:first-child {
+    border-top: 1px solid darkgray;
+  }
+  .acordion {
+    margin-left: 20px;
+    display: none;
+  }
+#close span {
+    color: white;
+}
+#close {
+    margin: 20px auto;
+    width: fit-content;
+}
 /*main*/
 #main {
     display: flex;
@@ -221,13 +283,15 @@ main h3 {
     display: flex;
 }
 #categoryLink p {
-    text-align: center;
+    display: flex;
     width: 250px;
     height: 60px;
     border: 1px solid rgba(128, 128, 128, 0.586);
     line-height: 62px;
     margin-left: 20px;
     border-radius: 4px;
+    justify-content: space-around;
+    padding-left: 10px;
 }
 #categoryLink p:hover {
     background-color: rgba(128, 128, 128, 0.112);
@@ -371,12 +435,35 @@ footer {
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 740px) {
 
 /*ヘッダー*/
+#separateOne{
+    padding-top: 70px;
+}
+#header h1 {
+    margin: 10px;
+}
+#header h1 img {
+    width: 250px;
+}
+#nav {
+    display: none;
+}
+.hamburger {
+    display: block;
+    margin: 25px;
+    width: 35px;
+}
 
 /*main*/
+#innerwrap {
+    margin: 0 20px;
+}
 #main {
+    display: block;
+}
+#top3Section {
     display: block;
 }
 #separateOne {
@@ -387,24 +474,43 @@ footer {
     padding: 0;
     margin: 0;
 }
-#search2,
-.bannerAd {
-    width: 70%;
-    margin: 40px auto;
+#search {
+    margin: 30px 0;
+}
+.searchButton {
+    width: 100%;
+    margin: 0;
+}
+#categoryLink {
+    display: block;
+}
+#categoryLink p {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#search2 {
+    display: none;
+}
+#asideCategory ul li {
+    height: 35px;
 }
 /*フッター*/
 #footer {
     flex-wrap: wrap;
+    padding: 20px;
 }
 .linkCollection {
-    width: 45%;
-    margin: 20px;
+    width: 100%;
+    padding: 20px 0;
 }
 .linkCollection ul {
     width: auto;
 }
 #lastIntroduction {
-    width: 50%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 }
