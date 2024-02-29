@@ -73,8 +73,7 @@ h3 {
 .close span{
     z-index: 100;
     left: 30%; 
-    transition-duration: 300ms;
-    background-color: white;       
+    transition-duration: 300ms;    
 }   
 .close span:nth-of-type(1){
     transform: rotate(40deg);
