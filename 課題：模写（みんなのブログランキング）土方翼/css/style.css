@@ -5,6 +5,9 @@ body {
 #innerwrap {
     margin: 0 50px;
 }
+.hidden {
+    display: none;
+}
 h2,
 h3 {
     padding-bottom: 20px;

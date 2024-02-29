@@ -11,9 +11,11 @@ $(function() {
     //ハンバーガーメニュー変形
       $(".hamburger").click(function() {
         if($('#header').hasClass('close')) {
+          $('.closebuttonmodal').removeClass('hidden')
           $('#header').removeClass('close');
         }else{
           $('#header').addClass('close');
+          $('.closebuttonmodal').addClass('hidden');
         }
     });
     
@@ -24,6 +26,8 @@ $(function() {
 
     $('#close').click(function(){
         $('.hamburgerModal').fadeOut();
+        $('#header').addClass('close');
+        $('.closebuttonmodal').addClass('hidden');
     });
 
     $('.pointer').click(function(){
@@ -38,5 +42,8 @@ $(function() {
 
     });
     
+    $('.close').click(function(){
+
+    })
     
 });
