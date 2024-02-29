@@ -8,6 +8,14 @@ $(function() {
         slidesToScroll:1,
       });
     
+    //ハンバーガーメニュー変形
+      $(".hamburger").click(function() {
+        if($('#header').hasClass('close')) {
+          $('#header').removeClass('close');
+        }else{
+          $('#header').addClass('close');
+        }
+    });
     
     //ハンバーガーメニュー、モーダル
     $('.hamburger').click(function(){
